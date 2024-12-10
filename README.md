@@ -1,14 +1,16 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# SplashScreenSample - Android & iOS スプラッシュ画面設定サンプル
+Compose Multiplatformを使ったAndroidとiOS両環境でスプラッシュ画面を設定するサンプルです。
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## 📚記事リンク
+プロジェクトの詳細な手順については、以下のQiita記事をご覧ください。
+👉 [Compose Multiplatform入門：スプラッシュ画面を設定する方法](https://qiita.com/maabow/53ff47082f5fa9f4b732)
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## 🖥️環境
+- プロジェクト作成: [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/)
+- IDE:
+  - Android Studio 2024.2.1 
+  - Xcode 16.1
 
+## 💡注意点
+iOSのスプラッシュ画面はキャッシュが効いて 変更が反映されない場合があります。変更後はエミュレーターの再起動を忘れずに行ってください。
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
